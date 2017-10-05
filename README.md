@@ -1,5 +1,5 @@
 # magic-mirror
-Angular 4 driven dashboard for magic mirror project
+Angular 4 driven dashboard for magic mirror project. Will eventually run on Raspberry Pi Zero W or C.H.I.P (tested).
 
 ## Features v0.0.1
 RSS to JSON feed  
