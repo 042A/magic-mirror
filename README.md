@@ -1,17 +1,23 @@
 # magic-mirror
 Angular 4 driven dashboard for magic mirror project
 
-# run server
-## Install
-node 6.6.0
-use nvm for version management
+## Features v0.0.1
+RSS to JSON feed
+Implementation of Semantics UI JQUARY-version
+Youtube Player
 
-angluar-cli
+## Installation and run dev-server
+1, node
+https://nodejs.org/en/download/
+
+2, angluar-cli
 https://github.com/angular/angular-cli#installation
-## Run
-bash to root folder
+
+git clone https://github.com/042A/magic-mirror.git
+cd magic-mirror
 npm install
-ng serve (or ng serve --host 0.0.0.0) for router access
+ng serve 
+alt. or ng serve --host 0.0.0.0) for router access
 
 
 #5/10/17
