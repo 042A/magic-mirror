@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MagicMirror</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+    <div class="ui bottom fixed menu">
+        <a id="menu1" class="item">
+          <i class="sidebar icon"></i>
+          Menu
+        </a>
+
+      </div>
+      <div class="ui left inverted vertical menu sidebar">
+      <div class="ui section hidden divider"></div>
+      <a class="item">
+        Dashboard
+      </a>
+      <div class="ui section hidden divider"></div>
+      <a class="item">
+       News
+      </a>
+      <a class="item">
+        To-Do
+      </a>
+      <a class="item">
+      Entertainment
+      </a>
+      <a class="item">
+      Messages
+      </a>
+
+      <div class="ui section hidden divider"></div>
+
+      <a class="item">
+      Automations
+      </a>
+      <a class="item">
+      Fileserver
+      </a>
+      <a class="item">
+      SSH
+      </a>
+      <a class="item">
+      Devices
+      </a>
+      <a class="item">
+      Settings
+      </a>
+
+    </div>
+    <div class="pusher">
+        <div class="ui section hidden divider"></div>
+        <div class="ui section hidden divider"></div>
+    <app-root></app-root>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<script>
+
+$(function() {
+
+      $("#menu1").click( function()
+           {
+            $('.ui.sidebar')
+            .sidebar('toggle');
+           }
+      );
+});
+
+
+  </script>
+
+<script>
+
+    $(function() {
+      $('select.dropdown')
+  .dropdown('set selected', ['meteor', 'ember']);
+  $('.ui.dropdown')
+  .dropdown()
+;
+
+      $("#modal1").click( function()
+               {
+                $('.large.modal')
+                .modal('show')
+              ;
+                $('.url.example .ui.embed').embed();
+               }
+          );
+    });
+
+
+
+    </script>
+</html>
+

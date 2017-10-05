@@ -1,0 +1,17 @@
+<div class="ui two column doubling stackable grid container">
+
+<div class="eight wide column">
+    <app-feed-card *ngFor="let feed of feeds" [feed]="feed" > </app-feed-card>
+
+
+</div>
+<div class="eight wide column">
+    <div class="ui embed"></div>
+    <youtube-player
+    [videoId]="id"
+    (ready)="savePlayer($event)"
+    (change)="onStateChange($event)">
+    </youtube-player>
+</div>
+
+</div>
